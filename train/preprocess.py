@@ -42,7 +42,6 @@ data_set = pd.merge(sales_set, search_set, how="left")
 data_set = pd.merge(data_set, comment_set, how="left")
 data_set.dropna()             # 删除有空值的行
 data_set.drop_duplicates()    # 删除有重复的行
-# date_set["commentTotal"] = date_set["newsReplyVolume"] + date_set["carCommentVolume"] + date_set["popularity"]  # 所有相关媒体数量
 
 ######## 绘制汽车销量和相关媒体信息随月份的变化趋势 ########
 # column_list = ["salesVolume", "popularity", "newsReplyVolume", "carCommentVolume"]
